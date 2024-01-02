@@ -1,3 +1,4 @@
+import Articles from "./components/Articles";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Footer from "./components/PageFooter";
@@ -13,6 +14,7 @@ export default function Home() {
       <WhyUs />
       <Programs />
       <PricingPlan />
+      <Articles />
       <Footer />
     </>
   );

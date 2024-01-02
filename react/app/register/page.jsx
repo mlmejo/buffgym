@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Login() {
+export default function Register() {
   return (
     <main class="mx-auto w-full max-w-md p-6">
       <div className="flex justify-center">
@@ -16,14 +16,14 @@ export default function Login() {
       <div class="mt-7 rounded-xl border border-gray-200 bg-white shadow-sm">
         <div class="p-4 sm:p-7">
           <div class="text-center">
-            <h1 class="block text-2xl font-bold text-gray-800">Login</h1>
+            <h1 class="block text-2xl font-bold text-gray-800">Sign up</h1>
             <p class="mt-2 text-sm text-gray-600">
-              Don't have an account?{" "}
+              Already have an account?{" "}
               <Link
                 class="font-medium text-violet-600 decoration-2 hover:underline"
-                href="/register"
+                href="/login"
               >
-                Sign up here
+                Sign in here
               </Link>
             </p>
           </div>
@@ -47,6 +47,19 @@ export default function Login() {
                 <div>
                   <div class="relative">
                     <input
+                      type="text"
+                      id="mobile-number"
+                      name="mobile-number"
+                      class="block w-full rounded-lg border-gray-200 px-4 py-3 text-sm focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
+                      required
+                      placeholder="Mobile number"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="relative">
+                    <input
                       type="password"
                       id="password"
                       name="password"
@@ -57,11 +70,46 @@ export default function Login() {
                   </div>
                 </div>
 
+                <div>
+                  <div class="relative">
+                    <input
+                      type="password"
+                      id="confirm-password"
+                      name="confirm-password"
+                      class="block w-full rounded-lg border-gray-200 px-4 py-3 text-sm focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
+                      required
+                      placeholder="Confirm password"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex items-center">
+                  <div class="flex">
+                    <input
+                      id="remember-me"
+                      name="remember-me"
+                      type="checkbox"
+                      class="pointer-events-none mt-0.5 shrink-0 rounded border-gray-200 text-violet-600 focus:ring-violet-500"
+                    />
+                  </div>
+                  <div class="ms-3">
+                    <label for="remember-me" class="text-sm text-gray-900">
+                      I accept the{" "}
+                      <a
+                        class="font-medium text-violet-600 decoration-2 hover:underline"
+                        href="#"
+                      >
+                        Terms and Conditions
+                      </a>
+                    </label>
+                  </div>
+                </div>
+
                 <button
                   type="submit"
                   class="inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-transparent bg-violet-600 px-4 py-3 text-sm font-semibold text-white hover:bg-violet-700 disabled:pointer-events-none disabled:opacity-50"
                 >
-                  Login
+                  Sign up
                 </button>
               </div>
             </form>
