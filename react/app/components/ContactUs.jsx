@@ -100,7 +100,7 @@ export default function ContactUs() {
           <input
             type="email"
             id="input-label"
-            class="block w-full rounded-lg border-gray-700 bg-slate-900 px-4 py-3 text-sm text-gray-400 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
+            class="block w-full rounded-lg border-gray-700 bg-neutral-900 px-4 py-3 text-sm text-gray-400 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
           />
         </div>
 
@@ -114,7 +114,7 @@ export default function ContactUs() {
           <textarea
             type="email"
             id="input-label"
-            class="block w-full rounded-lg border-gray-700 bg-slate-900 px-4 py-3 text-sm text-gray-400 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
+            class="block w-full rounded-lg border-gray-700 bg-neutral-900 px-4 py-3 text-sm text-gray-400 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
             rows={10}
           ></textarea>
         </div>
