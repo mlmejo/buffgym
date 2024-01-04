@@ -81,7 +81,7 @@ export default function Navbar() {
 
             <a
               className="flex items-center gap-x-2 font-medium text-white hover:text-violet-600 sm:my-6 sm:border-s sm:border-gray-300 sm:ps-6"
-              href="#"
+              href="/login"
             >
               <svg
                 className="h-4 w-4 flex-shrink-0"

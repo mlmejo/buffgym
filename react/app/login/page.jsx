@@ -1,6 +1,21 @@
 import Link from "next/link";
 
 export default function Login() {
+  async function loginUser(formData) {
+    "use server";
+
+    const response = await fetch("http://127.0.0.1:1337/auth/local", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: formData.get("email"),
+        password: formData.get("password"),
+      }),
+    });
+  }
+
   return (
     <main class="mx-auto w-full max-w-md p-6">
       <div className="flex justify-center">

@@ -1,6 +1,12 @@
 import Link from "next/link";
+import { z } from "zod";
+import registerUser from "../actions/registerUser";
 
 export default function Register() {
+  const handleSubmit = async (formData) => {
+    setErrors(async () => await registerUser(formData));
+  };
+
   return (
     <main class="mx-auto w-full max-w-md p-6">
       <div className="flex justify-center">
@@ -29,17 +35,17 @@ export default function Register() {
           </div>
 
           <div class="mt-5">
-            <form>
+            <form action={handleSubmit}>
               <div class="grid gap-y-4">
                 <div>
                   <div class="relative">
                     <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      class="block w-full rounded-lg border-gray-200 px-4 py-3 text-sm focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
+                      type="text"
+                      id="username"
+                      name="username"
+                      class="block w-full rounded-lg border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
                       required
-                      placeholder="Email address"
+                      placeholder="Username"
                     />
                   </div>
                 </div>
@@ -47,12 +53,12 @@ export default function Register() {
                 <div>
                   <div class="relative">
                     <input
-                      type="text"
-                      id="mobile-number"
-                      name="mobile-number"
-                      class="block w-full rounded-lg border-gray-200 px-4 py-3 text-sm focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="block w-full rounded-lg border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
                       required
-                      placeholder="Mobile number"
+                      placeholder="Email address"
                     />
                   </div>
                 </div>
@@ -63,22 +69,9 @@ export default function Register() {
                       type="password"
                       id="password"
                       name="password"
-                      class="block w-full rounded-lg border-gray-200 px-4 py-3 text-sm focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
+                      class="block w-full rounded-lg border-gray-200 px-4 py-3 text-sm text-gray-900 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
                       required
                       placeholder="Password"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <div class="relative">
-                    <input
-                      type="password"
-                      id="confirm-password"
-                      name="confirm-password"
-                      class="block w-full rounded-lg border-gray-200 px-4 py-3 text-sm focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
-                      required
-                      placeholder="Confirm password"
                     />
                   </div>
                 </div>
