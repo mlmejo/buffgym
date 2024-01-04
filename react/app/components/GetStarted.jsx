@@ -10,7 +10,7 @@ export default function GetStarted() {
         <div>
           <button
             type="button"
-            class="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-stone-700 p-4 text-sm font-semibold text-white shadow-lg hover:bg-stone-900 disabled:pointer-events-none disabled:opacity-50 sm:p-4 sm:px-10"
+            className="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-stone-700 p-4 text-sm font-semibold text-white shadow-lg hover:bg-stone-900 disabled:pointer-events-none disabled:opacity-50 sm:p-4 sm:px-10"
           >
             Join Now
           </button>

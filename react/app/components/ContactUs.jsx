@@ -38,13 +38,13 @@ export default function ContactUs() {
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
-              class="h-6 w-6 text-violet-600"
+              className="h-6 w-6 text-violet-600"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z"
               />
             </svg>
@@ -92,29 +92,29 @@ export default function ContactUs() {
       <div className="col-span-2 flex max-w-2xl flex-col space-y-6">
         <div>
           <label
-            for="input-label"
-            class="mb-2 block text-sm font-medium text-white"
+            htmlFor="input-label"
+            className="mb-2 block text-sm font-medium text-white"
           >
             Email address
           </label>
           <input
             type="email"
             id="input-label"
-            class="block w-full rounded-lg border-gray-700 bg-neutral-900 px-4 py-3 text-sm text-gray-400 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
+            className="block w-full rounded-lg border-gray-700 bg-neutral-900 px-4 py-3 text-sm text-gray-400 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
           />
         </div>
 
         <div>
           <label
-            for="input-label"
-            class="mb-2 block text-sm font-medium text-white"
+            htmlFor="input-label"
+            className="mb-2 block text-sm font-medium text-white"
           >
             Message
           </label>
           <textarea
             type="email"
             id="input-label"
-            class="block w-full rounded-lg border-gray-700 bg-neutral-900 px-4 py-3 text-sm text-gray-400 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
+            className="block w-full rounded-lg border-gray-700 bg-neutral-900 px-4 py-3 text-sm text-gray-400 focus:border-violet-500 focus:ring-violet-500 disabled:pointer-events-none disabled:opacity-50"
             rows={10}
           ></textarea>
         </div>
@@ -122,7 +122,7 @@ export default function ContactUs() {
         <div>
           <button
             type="button"
-            class="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-violet-600 px-4 py-3 text-sm font-semibold text-white hover:bg-violet-700 disabled:pointer-events-none disabled:opacity-50"
+            className="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-violet-600 px-4 py-3 text-sm font-semibold text-white hover:bg-violet-700 disabled:pointer-events-none disabled:opacity-50"
           >
             Send
           </button>
