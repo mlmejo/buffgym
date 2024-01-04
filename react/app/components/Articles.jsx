@@ -49,7 +49,10 @@ function ArticleCard({ imageUrl, title, subtitle, url }) {
 export default async function Articles() {
   const articles = await getArticles();
   return (
-    <div className="container mx-auto mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
+    <div
+      className="container mx-auto mt-8 grid grid-cols-1 gap-8 px-6 sm:grid-cols-2"
+      id="news"
+    >
       {articles.map((article) => (
         <ArticleCard
           key={crypto.randomUUID()}

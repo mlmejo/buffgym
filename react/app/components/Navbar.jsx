@@ -62,19 +62,19 @@ export default function Navbar() {
             </a>
             <Link
               className="font-medium text-white hover:text-gray-400 sm:py-6"
-              href="/why-us"
+              href="#why-us"
             >
               Why Us
             </Link>
             <a
               className="font-medium text-white hover:text-gray-400 sm:py-6"
-              href="#"
+              href="#news"
             >
               News
             </a>
             <a
               className="font-medium text-white hover:text-gray-400 sm:py-6"
-              href="#"
+              href="#contact-us"
             >
               Contacts
             </a>

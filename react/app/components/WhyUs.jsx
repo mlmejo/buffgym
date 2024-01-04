@@ -1,6 +1,9 @@
 export default function WhyUs() {
   return (
-    <div className="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <div
+      className="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14"
+      id="why-us"
+    >
       <div className="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
         <h2 className="text-2xl font-bold uppercase text-violet-600 md:text-4xl md:leading-tight">
           Why choose us
